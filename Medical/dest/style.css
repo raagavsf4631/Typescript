@@ -1,0 +1,28 @@
+#container{
+    display: flex;
+    margin-left: 30px;
+}
+#login{
+    margin-left: 30px;
+}
+#homepage{
+    display: none;
+}
+#medicinedetail{
+    display: none;
+}
+#menu{
+    display: none;
+}
+#medicinedetail{
+    display: none;
+}
+#purchase{
+    display:none;
+}
+#quantityblock{
+    display:none;
+}
+#Order-table{
+    display:none;
+}

@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id ="signup">
+            <form action="" onsubmit=" return validateSignup()">
+                <h2>Sign Up</h2>
+                Name: <input type="text" id="name"><label id="name-error"></label><br>
+                email: <input type="text" id="email"><label id="email-error"></label><br>
+                Phone: <input type="text" id="phone">
+                password: <input type="text" id="pass"><label id="pass-error"></label><br>
+                confirm password: <input type="text" id="cpass"><label id="cpass-error"></label><br>
+                <button type="submit" id="submit" onclick="signup()">Submit</button><br>
+            </form>
+           
+        </div>
+        <div id="login">
+            <h2>Login In</h2>
+            Name: <input type="text" id="login-name"><br>
+            Password: <input type="text" id="login-password"><br>
+            <button type="submit" onclick="Login()">Login</button>
+        </div>
+    </div>
+
+    <div id="menu">
+       
+        <button type="button" onclick="medicinetable()">Medicine details</button>
+        <button type="button" onclick="purchasetable()">purchase</button>
+        <button type="button">Cancel</button>
+        <button type="button">Top Up</button>
+        <button type="button" onclick="orderHistory()">Order history</button>
+       
+    </div>
+    <div id="homepage">
+        <h3>homepage</h3>
+    </div>
+    
+
+    <div id="medicinedetail">
+            <table id="medicaltable">
+                <th>Medicine Name</th>
+                <th>Price</th>
+                <th>quantity</th>
+                <th>expiry</th>
+                
+            </table>
+    </div>
+
+    <div id="purchase">
+        <table id="purchasetable">
+            <th>Medicine Name</th>
+            <th>Price</th>
+            <th>quantity</th>
+            <th>expiry</th>
+            
+        </table>
+
+    </div>
+    <div id="quantityblock">
+        Quantity<input type="text" id="quantity" >
+        <button type="button" onclick="quantity()">buy</button>
+    </div>
+    <div id="Order-table">
+        <th>Medicine ID</th>
+        <th>User ID</th>
+        <th>Medicine name</th>
+        <th>quantity</th>
+        
+    </div>
+    <script src="medical.js"></script>
+    
+</body>
+</html>
